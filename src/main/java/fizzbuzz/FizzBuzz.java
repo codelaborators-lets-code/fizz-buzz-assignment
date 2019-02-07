@@ -2,6 +2,16 @@ package fizzbuzz;
 
 public class FizzBuzz {
 
-	//create the production code to make all of the tests pass!!
+	public String response(int number) {
+		if (number % 3 == 0 && number % 5 == 0) {
+			return "FizzBuzz";
+		} else if (number % 3 == 0) {
+			return "Fizz";
+		} else if (number % 5 == 0) {
+			return "Buzz";
+		}
+		return "" + number;
+
+	}
 
 }
